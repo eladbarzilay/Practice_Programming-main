@@ -4,7 +4,7 @@
   "description": "*A system that offers short exercises and complex tasks in different programming languages. The system also provides guides to these languages. In the system, an administrative interface for adding and editing exercises.*",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+
     "build": "react-scripts build"
   },
   "repository": {
