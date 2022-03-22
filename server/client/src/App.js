@@ -14,10 +14,20 @@ export const UserContext = createContext()
 
 function App() {
   const [registeruser, setregisteruser] = useState()
+ 
+  const [state, setState] = useState()
+
   
   const [loginUser, setloginUser] = useState()
   const [token, setToken] = useState()
 
+  const callAPI=()=>{
+    fetch("/")
+    .then(res => res.json())
+    .then(res => {
+      setState({response: res});
+  })
+};
 
 
   return (
