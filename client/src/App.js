@@ -21,14 +21,6 @@ function App() {
   const [loginUser, setloginUser] = useState()
   const [token, setToken] = useState()
 
-  const callAPI=()=>{
-    fetch("/")
-    .then(res => res.json())
-    .then(res => {
-      setState({response: res});
-  })
-};
-
 
   return (
     <div className="app">
