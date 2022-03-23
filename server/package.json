@@ -9,7 +9,7 @@
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server",
-    "start": "run index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
