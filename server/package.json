@@ -2,6 +2,9 @@
   "name": "final-project",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "16.13.1"
+  },
   "scripts": {
     "build": "react-scripts build",
     "test": "echo \"Error: no test specified\" && exit 1",
