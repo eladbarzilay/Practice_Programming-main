@@ -17,14 +17,6 @@ function App() {
  
   const [state, setState] = useState()
 
-  const getPass = () => {
-    // Get the passwords and store them in state
-    fetch('/')
-      .then(res => res.json())
-      .then(setState({  }));
-  }
-
-  useEffect(getPass, []);
   const [loginUser, setloginUser] = useState()
   const [token, setToken] = useState()
 
