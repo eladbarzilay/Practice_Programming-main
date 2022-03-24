@@ -34,8 +34,8 @@ function App() {
       <UserContext.Provider value={{ registeruser, setregisteruser, loginUser, setloginUser,token, setToken }}>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<LoginPages />} />
+          <Route path="https://exercide-site.herokuapp.com/" element={<Home />} />
+          <Route path="https://exercide-site.herokuapp.com/login" element={<LoginPages />} />
           <Route path="/exercise/:id" element={<Exercise />} />
           {loginUser?.permit === "admin" ? <Route path="/admin" element={<Admin />} /> : <Route path="/admin" element={<Home />} />}
           {loginUser?.permit === "admin" ? <Route path="/admin/exercise/:id" element={<AdminExercise />} /> : <Route path="/admin" element={<Home />} />}
