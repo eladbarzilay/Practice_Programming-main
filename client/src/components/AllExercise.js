@@ -30,14 +30,14 @@ export default function AllExercise({ admin }) {
 
     function getLanguage() {
 
-        axios.get('https://exercide-site.herokuapp.com/1/Lang')
+        axios.get('https://exercide-site.herokuapp.com/Lang')
             .then(result => {
                 setLanguageData(result.data)
             })
     }
 
     function getExercise(id) {
-        axios.get(`https://exercide-site.herokuapp.com//exe-Lang/${id}`)
+        axios.get(`https://exercide-site.herokuapp.com/exe-Lang/${id}`)
             .then(result => {
                 setExerciseData(result.data)
             })
