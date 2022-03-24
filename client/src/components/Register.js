@@ -15,7 +15,7 @@ export default function Register(props) {
 
 
 
-        axios.post('https://exercide-site.herokuapp.com//register', values)
+        axios.post('https://exercide-site.herokuapp.com/register', values)
             .then(() => {
                 form.reset()
                 setregisteruser(values)

@@ -21,7 +21,7 @@ export default function Login(props) {
         form = e.target,
         values = getAllValues(form)
         
-        axios.post('https://exercide-site.herokuapp.com//login', values)
+        axios.post('https://exercide-site.herokuapp.com/login', values)
         .then((result) => {
             form.reset()
             setloginUser(result.data.result) /////לקבל את הכל תחת סטייט אחד ומשם לפרק את מה שאני צריך
