@@ -109,7 +109,7 @@ module.exports = app => {
     })
 
     //read  - Lang
-    app.get('/Lang', async (req, res) => {
+    app.get('https://exercide-site.herokuapp.com/Lang', async (req, res) => {
         res.send(await LangLogic.read())
     })
 
