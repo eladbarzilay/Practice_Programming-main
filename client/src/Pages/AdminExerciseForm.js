@@ -44,13 +44,13 @@ export default function Exercise() {
 
     function getExercise() {
 
-        axios.get('https://exercide-site.herokuapp.com//Lang')
+        axios.get('https://exercide-site.herokuapp.com/Lang')
             .then(result => {
                 setLanguageData(result.data)
             })
 
             if (params.id)
-        axios.get(`https://exercide-site.herokuapp.com//exercise/${params.id}`)
+        axios.get(`https://exercide-site.herokuapp.com/exercise/${params.id}`)
             .then(result => {
                 setExecriseData(result.data.exercise[0])
             })
@@ -77,11 +77,11 @@ export default function Exercise() {
         e.preventDefault()
         console.log(ExecriseData);
         if (params.id) {
-            axios.put(`https://exercide-site.herokuapp.com//exercise/${params.id}`, ExecriseData, { headers: { "Authorization": context.token } })
+            axios.put(`https://exercide-site.herokuapp.com/exercise/${params.id}`, ExecriseData, { headers: { "Authorization": context.token } })
                 .then((res) => { console.log(res.data) }).catch((err) => console.log(err))
         }
         else {
-            axios.post(`https://exercide-site.herokuapp.com//exercise`, ExecriseData, { headers: { "Authorization": context.token } })
+            axios.post(`https://exercide-site.herokuapp.com/exercise`, ExecriseData, { headers: { "Authorization": context.token } })
                 .then((res) => { console.log(res.data) }).catch((err) => console.log(err))
                 setExecriseData(modelExersice)
         }
