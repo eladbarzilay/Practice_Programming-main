@@ -1,20 +1,29 @@
 {
-  "name": "practice_programming-main",
+  "name": "final-project",
   "version": "1.0.0",
-  "description": "*A system that offers short exercises and complex tasks in different programming languages. The system also provides guides to these languages. In the system, an administrative interface for adding and editing exercises.*",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js"
+  "engines": {
+    "node": "16.13.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eladbarzilay/Practice_Programming-main.git"
+  "scripts": {
+
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server"
+
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eladbarzilay/Practice_Programming-main/issues"
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "i": "^0.3.7",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.5",
+    "nodemon": "^2.0.15",
+    "react-scripts": "^5.0.0"
   },
-  "homepage": "https://github.com/eladbarzilay/Practice_Programming-main#readme"
+  "devDependencies": {},
+  "description": ""
 }
