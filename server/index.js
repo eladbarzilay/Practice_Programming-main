@@ -1,5 +1,6 @@
 
 require('dotenv').config()
+const path = require('path');
 
 // require('./DL/ScriptData/script_lang')
 const
